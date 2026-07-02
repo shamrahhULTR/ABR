@@ -1,0 +1,5 @@
+.DS_Store
+server/abr.db
+_src/_compare*
+_src/Archivo.ttf
+__pycache__/

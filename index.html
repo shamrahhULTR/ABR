@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Another Beautiful Roof — Identity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="svg/app-icon.svg">
+<style>
+  :root{--ink:#0B0E14;--panel:#12161F;--signal:#A31621;--steel:#8B93A1;--paper:#F4F5F7;--line:rgba(139,147,161,.16)}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--ink);color:var(--paper);font-family:'IBM Plex Mono',monospace;-webkit-font-smoothing:antialiased;padding:34px 20px 72px}
+  .wrap{max-width:760px;margin:0 auto}
+  .eyebrow{font-size:11px;letter-spacing:.32em;color:var(--signal);text-transform:uppercase}
+  h1{font-family:'Archivo';font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:clamp(22px,5.4vw,32px);margin:10px 0 6px;line-height:1}
+  .sub{color:var(--steel);font-size:12.5px;max-width:46ch;line-height:1.6}
+  h2{font-family:'Archivo';font-weight:600;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#fff;margin:40px 0 14px;display:flex;align-items:center;gap:12px}
+  h2::after{content:"";flex:1;height:1px;background:var(--line)}
+  img.logo{display:block}
+
+  .hero{background:var(--panel);border:1px solid var(--line);border-radius:18px;display:flex;align-items:center;justify-content:center;padding:64px;margin-top:24px}
+  .hero img{width:min(340px,72vw)}
+
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .ctx{border:1px solid var(--line);border-radius:14px;min-height:156px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:26px}
+  .ctx .cap{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--steel)}
+  .ctx.dark{background:var(--ink)} .ctx.light{background:var(--paper)} .ctx.color{background:var(--signal)}
+  .ctx.light .cap{color:#6b717c} .ctx.color .cap{color:rgba(11,14,20,.62)}
+  .ctx img{width:64px}
+
+  .scale{border:1px solid var(--line);border-radius:14px;background:var(--paper);display:flex;align-items:flex-end;justify-content:center;gap:40px;padding:36px 20px;flex-wrap:wrap}
+  .scale .u{display:flex;flex-direction:column;align-items:center;gap:14px}
+  .scale .u .cap{font-size:10px;color:#6b717c;letter-spacing:.08em}
+  .s64{width:64px}.s40{width:40px}.s24{width:24px}.s16{width:16px}
+
+  .lock{border:1px solid var(--line);border-radius:14px;padding:34px;margin-bottom:12px;display:flex;align-items:center;justify-content:center}
+  .lock.light{background:var(--paper)} .lock.dark{background:var(--ink)}
+  .lock.horizontal img{width:min(420px,84vw)} .lock.stacked img{width:min(220px,60vw)}
+
+  .pal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .sw{border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .sw .chip{height:76px} .sw .info{padding:10px 12px;font-size:11px;line-height:1.5}
+  .sw .nm{color:#fff;letter-spacing:.04em} .sw .hex{color:var(--steel)}
+
+  .meta{border:1px solid var(--line);border-left:3px solid var(--signal);border-radius:12px;background:var(--panel);padding:22px 24px;margin-top:26px}
+  .meta .t{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--signal)}
+  .meta p{font-size:13px;color:#C5CBD5;margin-top:12px;line-height:1.65}
+  .meta ul{list-style:none;margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px}
+  .meta li{font-size:12px;color:#C5CBD5;padding-left:18px;position:relative}
+  .meta li::before{content:"↳";position:absolute;left:0;color:var(--steel)}
+  @media(max-width:560px){.grid3,.pal,.meta ul{grid-template-columns:1fr 1fr}.scale{gap:26px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Brand Identity · v2</div>
+  <h1>Another Beautiful Roof</h1>
+  <div class="sub">Geometric monogram — the letter A built as a pitched roof with overhanging eaves. Vector · monochrome · outlined wordmark · built to scale to 16px.</div>
+
+  <div class="hero"><img class="logo" src="svg/logo-horizontal-reverse.svg" alt="Another Beautiful Roof"></div>
+
+  <h2>On dark · light · signal</h2>
+  <div class="grid3">
+    <div class="ctx dark"><img src="svg/mark-reverse.svg" alt=""><span class="cap">Ink field</span></div>
+    <div class="ctx light"><img src="svg/mark-ink.svg" alt=""><span class="cap">Paper</span></div>
+    <div class="ctx color"><img src="svg/mark-ink.svg" alt=""><span class="cap">Signal</span></div>
+  </div>
+
+  <h2>Holds down to 16px</h2>
+  <div class="scale">
+    <div class="u"><img class="s64" src="svg/mark-ink.svg" alt=""><span class="cap">64</span></div>
+    <div class="u"><img class="s40" src="svg/mark-ink.svg" alt=""><span class="cap">40</span></div>
+    <div class="u"><img class="s24" src="svg/mark-ink.svg" alt=""><span class="cap">24</span></div>
+    <div class="u"><img class="s16" src="svg/mark-ink.svg" alt=""><span class="cap">16px</span></div>
+  </div>
+
+  <h2>Lockups</h2>
+  <div class="lock horizontal light"><img class="logo" src="svg/logo-horizontal-ink.svg" alt="Another Beautiful Roof"></div>
+  <div class="lock stacked dark"><img class="logo" src="svg/logo-stacked-reverse.svg" alt="Another Beautiful Roof"></div>
+
+  <h2>Palette</h2>
+  <div class="pal">
+    <div class="sw"><div class="chip" style="background:#0B0E14;border-bottom:1px solid var(--line)"></div><div class="info"><div class="nm">Ink</div><div class="hex">#0B0E14</div></div></div>
+    <div class="sw"><div class="chip" style="background:#A31621"></div><div class="info"><div class="nm">Signal</div><div class="hex">#A31621</div></div></div>
+    <div class="sw"><div class="chip" style="background:#8B93A1"></div><div class="info"><div class="nm">Steel</div><div class="hex">#8B93A1</div></div></div>
+    <div class="sw"><div class="chip" style="background:#F4F5F7"></div><div class="info"><div class="nm">Paper</div><div class="hex">#F4F5F7</div></div></div>
+  </div>
+
+  <div class="meta">
+    <div class="t">Built to your brief</div>
+    <p>Geometric · abstract · negative-space · monochrome · zero gradients · two colors. One form that reads as A, a roof, and a shelter — now with the roof as the hero. Institutional and permanent: the Fortune 500 column, not the roofer column. The wordmark is Archivo Expanded Bold, outlined to vector paths — no font dependency, opens correctly anywhere.</p>
+    <ul>
+      <li>Mark — ink &amp; reverse (SVG + PNG)</li>
+      <li>App icon — ink &amp; signal (SVG + PNG)</li>
+      <li>Horizontal lockup (SVG + PNG)</li>
+      <li>Stacked lockup (SVG + PNG)</li>
+      <li>Wordmark only (SVG + PNG)</li>
+      <li>SVG = infinite scale · PNG = 2x transparent</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
